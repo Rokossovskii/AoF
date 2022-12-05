@@ -9,7 +9,9 @@ with open("day_1/data.txt",'r') as file:
             calories_sum_arr.append(count)
             count = 0
 
-print(max(calories_sum_arr))
+calories_sum_arr.sort(reverse=True)
+print(calories_sum_arr[:3])
+print(sum(calories_sum_arr[:3]))
 
 
             
