@@ -47,7 +47,7 @@ def main():
         if weight <= 100_000:
             at_most_100_000 += weight 
     
-    needed_space = 30_000_000 - (70_000_000 - calculate_dir_weight(driver['/'], driver))
+    needed_space = 30_000_000 - (7e+7 - calculate_dir_weight(driver['/'], driver))
     for dir in driver:
         weight = calculate_dir_weight(driver[dir], driver)
         if weight >= needed_space:
